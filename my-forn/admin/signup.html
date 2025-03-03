@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Admin form</title>
+      <link rel="stylesheet" href="css/sign.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <header>Admin form</header>
+         <div class="progress-bar">
+            <div class="step">
+               <p>
+                  admin id
+               </p>
+               <div class="bullet">
+                  <span>1</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  university info
+               </p>
+               <div class="bullet">
+                  <span>2</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  events
+                  list
+               </p>
+               <div class="bullet">
+                  <span>3</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Submit
+                  & send
+               </p>
+               <div class="bullet">
+                  <span>4</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+         </div>
+         <div class="form-outer">
+            <form action="admin.php" method="post" enctype="multipart/form-data">
+               <div class="page slide-page">
+                  <div class="title">
+                     Basic Info:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        First Name
+                     </div>
+                     <input type="text" name="first">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Last Name
+                     </div>
+                     <input type="text" name="last">
+                  </div>
+                  <div class="field">
+                     <button class="firstNext next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="field">
+                     <div class="label">
+                        Email Address
+                     </div>
+                     <input type="text" name="email">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        university id
+                     </div>
+                     <input type="text" name="uni_id">
+                  </div>
+                 
+                  <div class="field btns">
+                     <button class="prev-1 prev">Previous</button>
+                     <button class="next-1 next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     image on events
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        description on events
+                     </div>
+                     <input type="text" name="description">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        date of conducting
+                     </div>
+                     <label for="datePicker">Choose a date:</label>
+                     <input type="date" id="datePicker" name="date">
+        
+                  </div>
+                  <div>
+                   
+                    
+                  
+                  <div class="field btns">
+                     <button class="prev-2 prev">Previous</button>
+                     <button class="next-2 next">Next</button>
+                  </div>
+               </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     images and registration
+                  </div>
+                  <div>
+                     <div class="drop_box" font>
+                        <header>
+                          <h4">Select File here</h4>
+                        </header>
+                        <p>Files Supported: PDF Only</p>
+                        <input type="file" name="file"
+                                  class="form-control" accept=".pdf"
+                                  title="Upload PDF"/>
+                       
+                      </div>
+                
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        payment details
+                     </div>
+                     <input type="text" name="payment">
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-3 prev">Previous</button>
+                     <button type="submit" class="submit" name="sbt">Submit</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <script src="js/sign.js"></script>
+   </body>
+</html>
